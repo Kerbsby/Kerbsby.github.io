@@ -484,6 +484,28 @@
 }
 
 
+@media(max-width:300px){
+    .steps__section-thumbnail {
+        height: 150px;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    .steps__content-width{
+        max-width: 500px;
+        margin-left: 0;
+        text-align: center;
+      }
+    .steps__content-width .h2{
+        font-size: 15px;
+        line-height: 5px;
+        color: #85AD6E;
+    }
+    .steps__content-width p {
+        font-size: 8px; /* Adjust font size for paragraph */
+    }
+}
+
+
 /*service*/
 .gallery-page{
     background-color: #FAD8E6;
