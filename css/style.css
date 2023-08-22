@@ -462,7 +462,7 @@
     }
 }
 
-@media(max-width:305px){
+@media(max-width:370px){
     .steps__section-thumbnail {
         height: 150px;
         object-fit: cover;
