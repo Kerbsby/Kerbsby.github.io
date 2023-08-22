@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 
 
 * {
@@ -201,6 +202,7 @@
 @media screen and (max-width: 767px) {
     #hero {
         min-height: 20vh;
+
     }
     .headermessage h1 {
         font-size: 37px;
@@ -246,7 +248,7 @@
 /*steps*/
 
 
-  .steps {
+  .welcome-page {
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -272,9 +274,11 @@
 
   
 .steps__content-width .h2{
-    font-size: 45px;
+    font-size: 37px;
     line-height: 50px;
     color: #85AD6E;
+    text-transform:uppercase;
+    font-family: 'Lora', serif;
 }
 
 .steps__content-width p{
@@ -308,7 +312,7 @@
 
 
 
-@media (max-width: 991px)  {
+  @media (max-width: 991px)  {
     .steps__content-width .h2{
         font-size: 40px;
         line-height: 50px;
@@ -349,29 +353,29 @@
 
 
     .steps__section-thumbnail {
-        height: 500px; /* Set the height as needed */
+        height: 500px;
         object-fit: cover;
         margin: 0 auto;
     }
 
     .steps__content-width {
         max-width: 500px;
-        margin: 20px 0; /* Add some space between picture and text */
+        margin: 20px 0; 
     }
 
     .steps__content-width .h2 {
-        font-size: 37px; /* Adjust font size for h2 */
-        line-height: 40px; /* Adjust line height */
+        font-size: 37px; 
+        line-height: 40px;
         color: #85AD6E;
     }
 
     .steps__content-width p {
-        font-size: 13px; /* Adjust font size for paragraph */
+        font-size: 13px; 
     }
 }
 
 @media (max-width: 575px) {
-.steps{
+.welcome-page{
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -399,13 +403,18 @@
     .steps__content-width p {
         font-size: 12px; /* Adjust font size for paragraph */
     }
+
+    .steps__section-thumbnail:hover{
+        transform: scale(1.05);
+        z-index: 2;
+      }
 }
 
 
 
 
   @media (max-width: 530px) {   
-    .steps {
+    .welcome-page {
         padding-top: 30px;
         padding-bottom: 30px;
       }
@@ -432,5 +441,124 @@
   }
 
  
+@media(max-width:450px){
+    .steps__section-thumbnail {
+        height: 200px;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    .steps__content-width{
+        max-width: 500px;
+        margin-left: 0;
+        text-align: center;
+      }
+    .steps__content-width .h2{
+        font-size: 25px;
+        line-height: 10px;
+        color: #85AD6E;
+    }
+    .steps__content-width p {
+        font-size: 10px; /* Adjust font size for paragraph */
+    }
+}
 
+@media(max-width:305px){
+    .steps__section-thumbnail {
+        height: 150px;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    .steps__content-width{
+        max-width: 500px;
+        margin-left: 0;
+        text-align: center;
+      }
+    .steps__content-width .h2{
+        font-size: 20px;
+        line-height: 5px;
+        color: #85AD6E;
+    }
+    .steps__content-width p {
+        font-size: 8px; /* Adjust font size for paragraph */
+    }
+}
+
+
+/*service*/
+.gallery-page{
+    background-color: #FAD8E6;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-intro{
+    margin-bottom: 40px;
+}
+
+
+.section-intro .divider{
+    height: 4px;
+    width: 250px;
+    background: linear-gradient(to right, #eeaeca, #a694e9);
+    margin: 16px auto;
+    border-radius: 50px;
+}
+
+
+.section-intro h1{
+    color: #85AD6E;
+    font-family: 'Lora', serif;
+}
+
+.section-intro p{
+    color: #736C6C;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.gallery{
+    margin-top: 10px;
+}
+
+.gallery .container{
+    position: relative;
+}
+ 
+
+
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    margin-bottom: 30px; 
+
+}
+
+.gallery .card img{
+    width: 100%;
+    border-radius: 10px;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+.gallery .card img:hover{
+    filter: blur(0px);
+}
+
+
+
+.gallery-button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .gallery-button .gallery-btn {
+    background-color: #F4903A;
+    padding: 15px 50px;
+    color: white;
+    border-radius: 20px;
+  }
 
