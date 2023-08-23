@@ -11,6 +11,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
   }
 
   .container-custom {
@@ -217,7 +218,7 @@
 }
 
 /* For screen sizes up to 375px */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     .headermessage {
       position: absolute;
       top: 50%;
@@ -395,13 +396,13 @@
     }
 
     .steps__content-width .h2 {
-        font-size: 32px; /* Adjust font size for h2 */
+        font-size: 35px; /* Adjust font size for h2 */
         line-height: 10px; /* Adjust line height */
         color: #85AD6E;
     }
 
     .steps__content-width p {
-        font-size: 12px; /* Adjust font size for paragraph */
+        font-size: 13px; /* Adjust font size for paragraph */
     }
 
     .steps__section-thumbnail:hover{
@@ -528,6 +529,7 @@
 
 
 .section-intro h1{
+    font-size: 40px;
     color: #85AD6E;
     font-family: 'Lora', serif;
 }
@@ -584,3 +586,267 @@
     border-radius: 20px;
   }
 
+
+  @media screen and (max-width: 1235px) {
+    .gallery img{
+        height: 350px;
+    }
+
+    .modal-dialog{
+        width: 400px;
+    
+    }
+    
+}
+
+
+@media screen and (max-width: 1199px) {
+    .gallery img{
+        width: 100px;
+        height: 350px;
+    }
+
+    .modal-dialog{
+        width: 400px;
+    
+    }
+
+    .section-intro h1{
+        font-size: 38px;
+    }
+    
+    .section-intro p{
+        font-size: 13px;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .section-intro{
+        margin-bottom: 30px;
+    }
+
+
+    .gallery img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .modal-dialog{
+        width: 300px;
+    
+    }
+    .section-intro h1{
+        font-size: 36px;
+    }
+    
+    .section-intro p{
+        font-size: 12px;
+    }
+    
+    .section-intro .divider{
+        width: 200px;
+    }
+}
+
+
+
+    
+
+@media screen and (max-width: 767px) {
+    .gallery .gallery-img {
+        max-width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-intro{
+        margin-bottom: 10px;
+    }
+
+    
+    .gallery .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-intro h1{
+        font-size: 35px;
+    }
+    
+    .section-intro p{
+        font-size: 11px;
+    }
+    
+    .section-intro .divider{
+        width: 180px;
+    }
+
+    .gallery-button .gallery-btn {
+        background-color: #F4903A;
+        padding: 10px 25px;
+        color: white;
+        border-radius: 20px;
+      }
+
+      .gallery-button {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+      }
+
+}
+
+
+@media screen and (max-width: 575px) {
+    .gallery-page{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .gallery .gallery-img {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .gallery .card img {
+        width: 250px; 
+        height: auto;
+        height: 300px; /* Set a maximum height for landscape orientation */
+    }
+
+    .section-intro {
+        margin-bottom: 10px;
+    }
+
+    .section-intro h1 {
+        font-size: 35px;
+    }
+    
+    .section-intro p {
+        font-size: 11px;
+    }
+    
+    .section-intro .divider {
+        width: 200px;
+    }
+
+    .gallery-button .gallery-btn {
+        background-color: #F4903A;
+        padding: 10px 25px;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .gallery-button {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .modal-dialog {
+        max-width: 90%; /* Adjust the maximum width as needed */
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+
+    .gallery .card img {
+        width: 230px; 
+        height: auto;
+        height: 250px; /* Set a maximum height for landscape orientation */
+    }
+
+    
+
+    .section-intro {
+        margin-bottom: 5px;
+    }
+
+    .section-intro h1 {
+        font-size: 30px;
+    }
+    
+    .section-intro p {
+        font-size: 10px;
+    }
+    
+    .section-intro .divider {
+        width: 170px;
+    }
+
+    .gallery-button .gallery-btn {
+        background-color: #F4903A;
+        padding: 8px 20px;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .gallery-button {
+        margin-top: 3px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .modal-dialog {
+        max-width: 80%; /* Adjust the maximum width as needed */
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 370px){
+
+    .gallery .card img {
+        width: 200px; 
+        height: auto;
+        height: 200px; /* Set a maximum height for landscape orientation */
+    }
+
+    
+
+    .section-intro {
+        margin-bottom: 1px;
+    }
+
+    .section-intro h1 {
+        font-size: 27px;
+    }
+    
+    .section-intro p {
+        font-size: 9px;
+    }
+    
+    .section-intro .divider {
+        width: 170px;
+    }
+
+    .gallery-button .gallery-btn {
+        background-color: #F4903A;
+        padding: 5px 15px;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .gallery-button {
+        margin-top: 1px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .modal-dialog {
+        max-width: 80%; /* Adjust the maximum width as needed */
+        margin: auto;
+    }
+}
