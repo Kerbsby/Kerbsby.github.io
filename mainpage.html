@@ -11,50 +11,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="/css/footer.css"/>
     <script
       src="https://kit.fontawesome.com/bf1c643ee2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="mainpage.html"
-            ><img src="../images/fleurlogo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallerypage.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <script src="/javascript/header.js"></script>
+
+
 
     <section id="hero">
       <div class="hero">
@@ -164,8 +131,8 @@
           </div>
         </div>
 
-        <div class="gallery row reveal">
-          <div class="gallery-img col-md-4 py-3 py-md-0">
+        <div class="gallery row">
+          <div class="gallery-img col-md-4 py-3 py-md-0 reveal">
             <div class="card">
               <img
                 src="images/arrangeflower.jpg"
@@ -176,45 +143,45 @@
                 alt="arranged"
               />
             </div>
+          </div>
 
+          <div
+          class="modal fade"
+          id="gallery_modal1"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
             <div
-              class="modal fade"
-              id="gallery_modal1"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
+              class="modal-content"
+              style="
+                background-color: rgba(182, 180, 180, 0.5);
+                border: none;
+              "
             >
-              <div class="modal-dialog modal-dialog-centered">
-                <div
-                  class="modal-content"
-                  style="
-                    background-color: rgba(182, 180, 180, 0.5);
-                    border: none;
-                  "
-                >
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="image-container">
-                      <img
-                        src="images/arrangeflower.jpg"
-                        class="modal-img"
-                        alt="modal-img"
-                      />
-                    </div>
-                  </div>
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="image-container">
+                  <img
+                    src="/images/arrangeflower.jpg"
+                    class="modal-img"
+                    alt="modal-img"
+                  />
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="gallery-img col-md-4 py-3 py-md-0">
+          <div class="gallery-img col-md-4 py-3 py-md-0 reveal">
             <div class="card">
               <img
                 src="images/galleryimg2.jpg"
@@ -225,45 +192,45 @@
                 alt="arranged"
               />
             </div>
+          </div>
 
+          <div
+          class="modal fade"
+          id="gallery_modal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
             <div
-              class="modal fade"
-              id="gallery_modal2"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
+              class="modal-content"
+              style="
+                background-color: rgba(182, 180, 180, 0.5);
+                border: none;
+              "
             >
-              <div class="modal-dialog modal-dialog-centered">
-                <div
-                  class="modal-content"
-                  style="
-                    background-color: rgba(182, 180, 180, 0.5);
-                    border: none;
-                  "
-                >
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="image-container">
-                      <img
-                        src="images/galleryimg2.jpg"
-                        class="modal-img"
-                        alt="modal-img"
-                      />
-                    </div>
-                  </div>
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="image-container">
+                  <img
+                    src="images/galleryimg2.jpg"
+                    class="modal-img"
+                    alt="modal-img"
+                  />
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="gallery-img col-md-4 py-3 py-md-0">
+          <div class="gallery-img col-md-4 py-3 py-md-0 reveal">
             <div class="card">
               <img
                 src="images/galleryimg3.jpg"
@@ -274,44 +241,44 @@
                 alt="arranged"
               />
             </div>
+        </div>
 
-            <div
-              class="modal fade"
-              id="gallery_modal3"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div
-                  class="modal-content"
-                  style="
-                    background-color: rgba(182, 180, 180, 0.5);
-                    border: none;
-                  "
-                >
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="image-container">
-                      <img
-                        src="images/galleryimg3.jpg"
-                        class="modal-img"
-                        alt="modal-img"
-                      />
-                    </div>
-                  </div>
-                </div>
+        <div
+        class="modal fade"
+        id="gallery_modal3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal-content"
+            style="
+              background-color: rgba(182, 180, 180, 0.5);
+              border: none;
+            "
+          >
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="image-container">
+                <img
+                  src="images/galleryimg3.jpg"
+                  class="modal-img"
+                  alt="modal-img"
+                />
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
         <div class="gallery-button">
           <a class="btn gallery-btn" href="#" role="button"
@@ -341,14 +308,14 @@
             <h1>Testimonials</h1>
             <div class="divider"></div>
             <p>
-              "Discover what our valued customers have to say about their
+              Discover what our valued customers have to say about their
               experience with us. <br />Join us in celebrating moments that
               define Fleur Loca's commitment
             </p>
           </div>
         </div>
 
-        <div class="row g-5 text-start reveal">
+        <div class="row g-4 text-start reveal">
           <div class="col-md-4">
             <div class="review">
               <div class="person">
@@ -358,7 +325,7 @@
                   <small>Facebook</small>
                 </div>
               </div>
-              <p class="pt-4">Absolutely stunning florals for our wedding. The arrangement style was  fresh yet timeless! And genuinely reasonable pricing. 
+              <p class>Absolutely stunning florals for our wedding. The arrangement style was  fresh yet timeless! And genuinely reasonable pricing. 
                 Easy communication and they were really accommodating and helpful for our special day. Absolutely recommend!!</p>
             </div>
           </div>
@@ -372,13 +339,13 @@
                   <small>Facebook</small>
                 </div>
               </div>
-              <p class="pt-4">Such an amazing experience with the ladies! Super easy to work with. 
+              <p class>Such an amazing experience with the ladies! Super easy to work with. 
                 I gave them free reign to do whatever their heart desired with my flowers for my wedding day and they did not disappoint ! Love your work!</p>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="review p-4">
+            <div class="review">
               <div class="person">
                 <img src="images/avatar1.jpg" alt="">
                 <div class="text ms-3">
@@ -386,10 +353,9 @@
                   <small>Facebook</small>
                 </div>
               </div>
-              <p class="pt-4">Couldn't be any prouder of this amazing duo's work, communication and creativity. We will withhold some beautiful memories because of what they have done for us. 
+              <p class>Couldn't be any prouder of this amazing duo's work, communication and creativity. We will withhold some beautiful memories because of what they have done for us. 
                 so adaptable, understanding and to all others needing florist services, don't go past FLEUR LOCA!
               </p>
-
             </div>
           </div>
       </div>
@@ -404,7 +370,7 @@
             </div>
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="contactusbtn">
-                <a class="btn contactus-btn" href="#" role="button">Know Us More!</a>
+                <a class="btn contactus-btn" href="#" role="button">Contact Us!</a>
               </div>
             </div>
           </div>
@@ -413,50 +379,8 @@
     </section>
 
 
-    <footer>
-      <div class="container p-4">
-        <div class="row">
-          <div class="description col-lg-4 col-md-12 mb-4">
-            <a class="mb-3">
-              <a class="navbar-brand" href="mainpage.html"><img src="../images/fleurlogo.png" alt=""/></a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-              voluptatem veniam, est atque cumque eum delectus sint!
-            </p>
-          </div>
-          <div class="links col-lg-4 col-md-6 mb-4">
-            <h5 class="mb-3">links</h5>
-            <ul class="list-unstyled  mb-0">
-              <li class="mb-2">
-                <a href="#hero">Home</a>
-              </li>
-              <li class="mb-2">
-                <a href="#">Gallery</a>
-              </li>
-              <li class="mb-2">
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#" >Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="short col-lg-4 col-md-6 mb-4">
-            <h5 class="mb-3">Contact Us</h5>
-              <p class="contact-icon"><i class="fas fa-home mr-3"></i> Bayswater, Western Australia</p>
-              <p class="contact-icon"><i class="fas fa-envelope mr-3"></i> fleurloca@outlook.com</p>
-              <p class="contact-icon"><i class="fas fa-phone mr-3"></i> +61 423 987 241</p>
-              <div class="social-icon mt-4">
-                <!-- Facebook -->
-                 <a type="button" href="https://www.facebook.com/FleurLocaFlorist" target="_blank" class="btn btn-floating btn-lg"><i class="fab fa-facebook-f"></i></a>
-                <!-- Instagram -->
-                <a type="button" href="https://www.instagram.com/fleurlocaflorist" target="_blank" class="btn btn-floating btn-lg"><i class="fab fa-instagram"></i></a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <script src="/javascript/footer.js"></script>
+
   </body>
   <script type="text/javascript" src="../javascript/app.js" >
 

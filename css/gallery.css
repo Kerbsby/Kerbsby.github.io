@@ -1,0 +1,348 @@
+#gallerybanner{
+    background-image:linear-gradient(306deg, rgba(224, 167, 167, 0.466) 0%, rgba(94, 94, 94, 0.5) 48%,rgba(220, 220, 220, 0.445) 48%, rgba(231, 180, 180, 0.308) 100%), linear-gradient(268deg, rgba(232, 232, 232, 0.356) 0%, rgba(232, 232, 232, 0.377) 9%,rgba(135, 135, 135, 0.342) 9%, rgba(135, 135, 135, 0.363) 100%), url(../images/sampleimage.png);
+    width: 100%;
+    min-height: 90%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    background-attachment: fixed;
+    padding: 350px 0 200px;
+}
+
+.gallery-content .container h1 {
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 4px;
+    font-size: 70px;
+    color: #eeaeca;
+    font-family: 'Lobster', cursive;
+    margin: 0;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    #gallerybanner {
+      padding: 250px 0 150px;
+    }
+    .gallery-content .container {
+      text-align: center;
+    }
+
+    .gallery-content .container h1{
+        font-size: 60px;
+    }
+  }
+
+  
+@media only screen and (max-width: 430px) {
+    .gallery-content .container h1{
+      font-size: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .gallery-content .container h1{
+      font-size: 40px;
+    }
+  }
+
+
+
+
+.gallery-intro{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.gallery-intro .divider{
+    height: 4px;
+    width: 250px;
+    background: linear-gradient(to right, #eeaeca, #a694e9);
+    margin: 16px auto;
+    border-radius: 50px;
+}
+
+
+
+.gallery-intro h1{
+    font-size: 50px;
+    color: #85AD6E;
+    font-family: 'Lora', serif;
+}
+
+.gallery-intro p{
+    padding-top: 25px;
+    color: #736C6C;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#gallerymain .category{
+    color: #85AD6E;
+    font-family: 'Lobster', cursive;
+}
+
+#gallerymain .category h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+#gallerymain {
+    background: rgb(250,176,237);
+    background: linear-gradient(153deg, rgba(250,176,237,1) 0%, rgba(246,237,239,1) 55%, rgba(246,237,239,1) 100%);
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+  .gallerypic {
+    margin-top: 10px;
+  }
+  
+  .gallerypic .container {
+    position: relative;
+  }
+  
+  .gallerypic .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    max-height: 400px; /* Set a fixed height */
+  }
+  
+  .gallerypic .card img {
+    max-width: 100%;
+    height: auto;
+    opacity: 70%;
+    transition: .5s ease;
+  }
+
+  .gallerypic .card img:hover{
+    opacity: 100%;
+  }
+
+
+
+
+  @media screen and (max-width: 1235px) {
+    .gallerypic img{
+        height: 350px;
+    }
+
+    .modal-dialog{
+        width: 400px;
+    
+    }
+    
+}
+
+
+@media screen and (max-width: 1199px) {
+    .gallerypic img{
+        height: 350px;
+    }
+
+    .modal-dialog{
+        width: 400px;
+    
+    }
+
+    .gallery-intro h1{
+        font-size: 38px;
+    }
+    
+    .gallery-intro p{
+        font-size: 13px;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .gallery-intro{
+        margin-bottom: 30px;
+    }
+
+
+    .gallerypic img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .modal-dialog{
+        width: 300px;
+    
+    }
+    .gallery-intro h1{
+        font-size: 36px;
+    }
+    
+    .gallery-intro p{
+        font-size: 12px;
+    }
+    
+    .gallery-intro .divider{
+        width: 200px;
+    }
+}
+
+
+
+    
+
+@media screen and (max-width: 767px) {
+    .gallerypic .galleryimage {
+        max-width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .galleryintro{
+        margin-bottom: 10px;
+    }
+
+    
+    .gallerypic .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .gallery-intro h1{
+        font-size: 35px;
+    }
+    
+    .gallery-intro p{
+        font-size: 11px;
+    }
+    
+    .gallery-intro .divider{
+        width: 180px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 575px) {
+    .gallery-main{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .gallerypic .galleryimage {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .gallerypic .card img {
+        width: 250px; 
+        height: auto;
+        height: 300px; /* Set a maximum height for landscape orientation */
+    }
+
+    .gallery-intro {
+        margin-bottom: 10px;
+    }
+
+    .gallery-intro h1 {
+        font-size: 35px;
+    }
+    
+    .gallery-intro p {
+        font-size: 11px;
+    }
+    
+    .gallery-intro .divider {
+        width: 200px;
+    }
+
+  
+    .modal-dialog {
+        max-width: 90%; /* Adjust the maximum width as needed */
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+
+    .gallerypic .card img {
+        width: 230px; 
+        height: auto;
+        height: 250px; /* Set a maximum height for landscape orientation */
+    }
+
+    
+
+    .gallery-intro {
+        margin-bottom: 5px;
+    }
+
+    .galler-intro h1 {
+        font-size: 30px;
+    }
+    
+    .gallery-intro p {
+        font-size: 10px;
+    }
+    
+    .gallery-intro .divider {
+        width: 170px;
+    }
+
+    .modal-dialog {
+        max-width: 80%; /* Adjust the maximum width as needed */
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 392px){
+
+    .gallerypic .card img {
+        width: 200px; 
+        height: auto;
+        height: 200px; /* Set a maximum height for landscape orientation */
+    }
+
+    
+
+    .gallery-intro {
+        margin-bottom: 1px;
+    }
+
+    .gallery-intro h1 {
+        font-size: 27px;
+    }
+    
+    .gallery-intro p {
+        font-size: 9px;
+    }
+    
+    .gallery-intro .divider {
+        width: 170px;
+    }
+
+
+    .modal-dialog {
+        max-width: 80%; 
+        margin: auto;
+    }
+}
+
+
