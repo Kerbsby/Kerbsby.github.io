@@ -348,8 +348,7 @@
 }
 
 #followbanner{
-       margin-top: 100px;
-       margin-bottom: 100px;
+      margin: 100px 100px;
        display: flex;
        justify-content: center;
        align-items: center;
@@ -361,15 +360,16 @@
    width: 100%;
    height: auto;
    text-align: center; 
-    background-color: #f0f0f0;
+   background-image: linear-gradient(306deg, rgba(94, 94, 94, 0.04) 0%, rgba(94, 94, 94, 0.04) 48%,rgba(220, 220, 220, 0.04) 48%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(268deg, rgba(232, 232, 232, 0.04) 0%, rgba(232, 232, 232, 0.04) 9%,rgba(135, 135, 135, 0.04) 9%, rgba(135, 135, 135, 0.04) 100%),linear-gradient(24deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 47%,rgba(147, 147, 147, 0.04) 47%, rgba(147, 147, 147, 0.04) 100%),linear-gradient(206deg, rgba(235, 235, 235, 0.04) 0%, rgba(235, 235, 235, 0.04) 68%,rgba(140, 140, 140, 0.04) 68%, rgba(140, 140, 140, 0.04) 100%),linear-gradient(90deg, rgb(243, 167, 227),rgb(243, 198, 242));
     padding: 50px;
-    border: 1px solid #ccc;
     border-radius: 10px;
     margin: 0 auto; /* Center the section horizontally within its container */
 }
 
 
 .follow-section h1{
+    color: #85AD6E;
+    font-family: 'Lobster', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,6 +377,7 @@
 
 
 .follow-section p{
+    color: #F4903A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,6 +385,7 @@
 
 
 .followusbtn{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,11 +400,11 @@
     border-radius: 50%;
     transition: 0.5s ease;
     text-decoration: none;
-    margin: 10px;
+    margin: 30px 30px;
     display: inline-block;
 }
 
-.followusbtn .facebook-btn{
+.follow-section .facebook-btn{
     background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.589)), url("../images/contactimg.jpg");
     background-size: cover; 
     background-position: center; 
@@ -418,5 +420,121 @@
 
 .follow-section .btn:hover{
     opacity: 90%;
+    color: #F4903A;
 }
 
+
+@media screen and (max-width: 1199px) {
+    .follow-section .btn {
+        padding: 70px 50px;
+    }
+}   
+
+@media screen and (max-width: 799px) {
+    .follow-section .btn {
+        padding: 50px 30px;
+        margin: 20px;
+    }
+
+    .follow-section{
+        max-width: 100vh;
+        width: 100%;
+        padding: 40px;
+    
+}  
+} 
+
+
+@media screen and (max-width: 670px) {
+    #followbanner{
+        margin: 50px 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+  }
+  
+    .follow-section .btn {
+        font-size: 15px;
+        padding: 10px 40px;
+        border-radius: 0%;
+        margin: 20px;
+    }
+
+    .follow-section{
+        max-width: 100vh;
+        width: 100%;
+        padding: 20px;
+    
+}  
+} 
+
+
+@media screen and (max-width: 499px) {
+    #followbanner{
+        margin: 50px 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+  }
+
+
+
+  .follow-section h1{
+    font-size: 25px;
+}
+
+
+.follow-section p{
+    font-size: 12px;
+}
+  
+    .follow-section .btn {
+        font-size: 14px;
+        padding: 10px 35px;
+        border-radius: 0%;
+        margin:20px;
+    }
+
+    .follow-section{
+        max-width: 90vh;
+        width: 100%;
+        padding: 20px 30px;
+    
+}  
+} 
+
+
+
+@media screen and (max-width: 430px) {
+    #followbanner{
+        margin: 40px 40px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+  }
+
+
+
+  .follow-section h1{
+    font-size: 22px;
+}
+
+
+.follow-section p{
+    font-size: 10px;
+}
+  
+    .follow-section .btn {
+        font-size: 14px;
+        padding: 10px 30px;
+        border-radius: 0%;
+        margin: 5px;
+    }
+
+    .follow-section{
+        max-width: 90vh;
+        width: 100%;
+        padding: 20px 30px;
+    
+}  
+} 
