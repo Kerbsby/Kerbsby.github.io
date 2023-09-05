@@ -307,6 +307,9 @@
 
 
 @media screen and (max-width: 450px){
+    #gallerymain{
+        padding-bottom: 20px;
+    }
     #gallerymain .container .category h2{
         font-size: 25px;
     }
@@ -471,7 +474,7 @@
 
 @media screen and (max-width: 499px) {
     #followbanner{
-        margin: 50px 50px;
+        margin: 40px 40px;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -506,8 +509,12 @@
 
 
 @media screen and (max-width: 430px) {
+
+
+
+
     #followbanner{
-        margin: 40px 40px;
+        margin: 30px 30px;
          display: flex;
          justify-content: center;
          align-items: center;
