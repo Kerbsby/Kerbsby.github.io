@@ -22,12 +22,25 @@
 
 
 
+@media only screen and (max-width: 991px) {
+    #gallerybanner {
+      padding: 200px 0 150px;
+    }
+
+  }
+
+
 
 
 @media only screen and (max-width: 767px) {
     #gallerybanner {
-      padding: 250px 0 150px;
+        padding: 150px 0 100px;
     }
+
+ 
+      
+     
+  
     .gallery-content .container {
       text-align: center;
     }
@@ -35,6 +48,8 @@
     .gallery-content .container h1{
         font-size: 60px;
     }
+
+   
   }
 
   

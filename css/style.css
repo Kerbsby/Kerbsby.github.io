@@ -99,10 +99,20 @@
     }
 }
 
+
+@media screen and (max-width: 1200px) {
+    .headermessage .btn {
+        font-size: 14px;
+        width: 110px;
+    }
+}
+
+
 /* For screen sizes up to 991px */
 @media screen and (max-width: 991px) {
     #hero {
         min-height: 10vh;
+        padding: 300px 0 200px;
     }
     .headermessage h1 {
         font-size: 50px;
@@ -132,15 +142,17 @@
 
 /* For screen sizes up to 767px */
 @media screen and (max-width: 767px) {
+    
     #hero {
         min-height: 20vh;
+        padding: 250px 0 150px;
 
     }
     .headermessage h1 {
-        font-size: 37px;
+        font-size: 45px;
     }
     .headermessage h5 {
-        font-size: 13px;
+        font-size: 15px;
     }
     .headermessage .btn {
         font-size: 12px;
@@ -167,16 +179,16 @@
     }
 
     .headermessage h1 {
-      font-size: 30px;
+      font-size: 40px;
     }
 
     .headermessage h5 {
-      font-size: 11px;
+      font-size: 14px;
     }
 
     .headermessage .btn {
-      font-size: 10px;
-      width: 90px;
+      font-size: 12px;
+      width: 100px;
     }
   }
 
@@ -400,7 +412,7 @@
     }
 }
 
-@media(max-width:370px){
+@media(max-width:375px){
     .steps__section-thumbnail {
         height: 150px;
         object-fit: cover;
