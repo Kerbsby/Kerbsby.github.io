@@ -7,14 +7,14 @@
     background-size: cover;
     justify-content: center;
     background-attachment: fixed;
-    padding: 350px 0 150px;
+    padding: 350px 0 200px;
 }
 
 .about-content .container h1 {
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 0px 10px 10px #666666;
     letter-spacing: 4px;
-    font-size: 70px;
-    color: #eeaeca;
+    font-size: 100px;
+    color: white;
     font-family: 'Lobster', cursive;
     margin: 0;
 }
@@ -349,7 +349,7 @@
     z-index: -1;
     width: 65%;
     min-height: 700px;
-    background-color: #eeaeca;
+    background-color: rgb(241, 196, 216);
     display: flex;
     align-items: center;
     justify-content:center;
