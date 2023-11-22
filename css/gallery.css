@@ -1,5 +1,5 @@
 #gallerybanner{
-    background-image:linear-gradient(306deg, rgba(224, 167, 167, 0.466) 0%, rgba(94, 94, 94, 0.5) 48%,rgba(220, 220, 220, 0.445) 48%, rgba(231, 180, 180, 0.308) 100%), linear-gradient(268deg, rgba(232, 232, 232, 0.356) 0%, rgba(232, 232, 232, 0.377) 9%,rgba(135, 135, 135, 0.342) 9%, rgba(135, 135, 135, 0.363) 100%), url(../images/sampleimage.png);
+    background-image:linear-gradient(306deg, rgba(224, 167, 167, 0.466) 0%, rgba(94, 94, 94, 0.5) 48%,rgba(220, 220, 220, 0.445) 48%, rgba(231, 180, 180, 0.308) 100%), linear-gradient(268deg, rgba(232, 232, 232, 0.356) 0%, rgba(232, 232, 232, 0.377) 9%,rgba(135, 135, 135, 0.342) 9%, rgba(135, 135, 135, 0.363) 100%), url(../images/sampleimage.jpg);
     width: 100%;
     min-height: 90%;
     position: relative;
@@ -34,7 +34,7 @@
 
 @media only screen and (max-width: 767px) {
     #gallerybanner {
-        padding: 150px 0 100px;
+        padding: 200px 0 100px;
     }
 
  
@@ -76,7 +76,7 @@
 
 .gallery-intro .divider{
     height: 4px;
-    width: 250px;
+    width: 350px;
     background: linear-gradient(to right, #eeaeca, #a694e9);
     margin: 15px auto;
     border-radius: 50px;
@@ -85,15 +85,15 @@
 
 
 .gallery-intro h1{
-    font-size: 50px;
+    font-size: 60px;
     color: #85AD6E;
-    font-family: 'Lora', serif;
+    font-family: 'Lobster', cursive;
 }
 
 .gallery-intro p{
     padding-top: 15px;
     color: #736C6C;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -102,12 +102,16 @@
 @media screen and (max-width: 1199px) {
 
     .gallery-intro h1{
-        font-size: 38px;
+        font-size: 50px;
     }
     
     .gallery-intro p{
         padding-top: 10px;
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .gallery-intro .divider{
+        width: 300px;
     }
     
     
@@ -116,13 +120,17 @@
 
 @media screen and (max-width: 991px) {
     .gallery-intro h1{
-        font-size: 36px;
+        font-size: 45px;
     }
     
     .gallery-intro p{
         padding-left: 15px;
         padding-right: 15px;
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .gallery-intro .divider{
+        width: 280px;
     }
     
     
@@ -130,12 +138,18 @@
 
 @media screen and (max-width: 767px) {
     .gallery-intro h1{
-        font-size: 35px;
+        font-size: 43px;
     }
     
     .gallery-intro p{
-        font-size: 13px;
+        font-size: 14px;
     }
+
+    .gallery-intro .divider{
+        width: 250px;
+    }
+
+
   }
 
 
@@ -143,30 +157,38 @@
   
 @media screen and (max-width: 420px) {
     .gallery-intro h1{
-        font-size: 30px;
+        font-size: 35px;
     }
     
     .gallery-intro p{
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .gallery-intro .divider{
         width: 150px;
 
     }
+
+    .gallery-intro .divider{
+        width: 200px;
+    }
   }
-
-
+  
 
 
 
 
 #gallerymain {
    
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   
+
+#gallerymain .container{
+    margin-bottom: 50px;
+}
+
   #gallerymain .category{
     color: #85AD6E;
     font-family: 'Lobster', cursive;
@@ -174,8 +196,9 @@
 
 #gallerymain .category h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 }
+
 
 
 
@@ -256,13 +279,20 @@
 }
 
 
-
     
 
 @media screen and (max-width: 767px) {
 
+    #gallerymain{
+        padding-top: 30px;
+    }
+
+    #gallerymain .container{
+        margin-bottom: 20px;
+    }
+
     #gallerymain .container .category h2{
-        font-size: 35px;
+        font-size: 45px;
     }
 
 
@@ -288,9 +318,6 @@
 
 @media screen and (max-width: 575px) {
 
-    #gallerymain .container .category h2{
-        font-size: 30px;
-    }
 
     .gallery-main{
         padding-top: 40px;
@@ -325,7 +352,7 @@
         padding-bottom: 20px;
     }
     #gallerymain .container .category h2{
-        font-size: 25px;
+        font-size: 40px;
     }
 
 
@@ -346,7 +373,7 @@
 
 @media screen and (max-width: 392px){
     #gallerymain .container .category h2{
-        font-size: 22px;
+        font-size: 38px;
     }
 
 
@@ -365,7 +392,7 @@
 }
 
 #followbanner{
-      margin: 100px 100px;
+      margin: 80px 80px;
        display: flex;
        justify-content: center;
        align-items: center;
@@ -373,13 +400,13 @@
 
 
 .follow-section{
-   max-width: 150vh;
-   width: 100%;
-   height: auto;
-   text-align: center; 
-   background-image: linear-gradient(306deg, rgba(94, 94, 94, 0.04) 0%, rgba(94, 94, 94, 0.04) 48%,rgba(220, 220, 220, 0.04) 48%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(268deg, rgba(232, 232, 232, 0.04) 0%, rgba(232, 232, 232, 0.04) 9%,rgba(135, 135, 135, 0.04) 9%, rgba(135, 135, 135, 0.04) 100%),linear-gradient(24deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 47%,rgba(147, 147, 147, 0.04) 47%, rgba(147, 147, 147, 0.04) 100%),linear-gradient(206deg, rgba(235, 235, 235, 0.04) 0%, rgba(235, 235, 235, 0.04) 68%,rgba(140, 140, 140, 0.04) 68%, rgba(140, 140, 140, 0.04) 100%),linear-gradient(90deg, rgb(241, 196, 216),rgb(243, 196, 215));
-   padding: 50px;
-    border-radius: 10px;
+    max-width: 100vh;
+    width: 85%;
+    height: auto;
+    text-align: center; 
+    background-image: linear-gradient(306deg, rgba(94, 94, 94, 0.04) 0%, rgba(94, 94, 94, 0.04) 48%,rgba(220, 220, 220, 0.04) 48%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(268deg, rgba(232, 232, 232, 0.04) 0%, rgba(232, 232, 232, 0.04) 9%,rgba(135, 135, 135, 0.04) 9%, rgba(135, 135, 135, 0.04) 100%),linear-gradient(24deg, rgba(26, 26, 26, 0.04) 0%, rgba(26, 26, 26, 0.04) 47%,rgba(147, 147, 147, 0.04) 47%, rgba(147, 147, 147, 0.04) 100%),linear-gradient(206deg, rgba(235, 235, 235, 0.04) 0%, rgba(235, 235, 235, 0.04) 68%,rgba(140, 140, 140, 0.04) 68%, rgba(140, 140, 140, 0.04) 100%),linear-gradient(90deg, rgb(241, 196, 216),rgb(243, 196, 215));
+    padding: 30px;
+    border-radius: 30px;
     margin: 0 auto; /* Center the section horizontally within its container */
 }
 

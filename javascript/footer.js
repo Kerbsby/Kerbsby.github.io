@@ -5,27 +5,25 @@ document.write('\
         <div class="row">\
           <div class="description col-lg-4 col-md-12 mb-4">\
             <a class="mb-3">\
-              <a class="navbar-brand" href="mainpage.html"><img src="../images/fleurlogo.png" alt=""/></a>\
+              <a class="navbar-brand" href="index.html"><img src="../images/fleurlogo.png" alt=""/></a>\
             <p>\
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis\
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam\
-              voluptatem veniam, est atque cumque eum delectus sint!\
+            From the choice of blooms to the overall design, we pride ourselves on our ability to create stunning wedding florals that align with your style and budget bringing your wedding day vision to life.\
             </p>\
           </div>\
           <div class="links col-lg-4 col-md-6 mb-4">\
             <h5 class="mb-3">links</h5>\
             <ul class="list-unstyled  mb-0">\
               <li class="mb-2">\
-                <a href="#hero">Home</a>\
+                <a href="index.html">Home</a>\
               </li>\
               <li class="mb-2">\
-                <a href="#">Gallery</a>\
+                <a href="gallerypage.html">Gallery</a>\
               </li>\
               <li class="mb-2">\
-                <a href="#">About</a>\
+                <a href="aboutpage.html">About</a>\
               </li>\
               <li>\
-                <a href="#" >Contact</a>\
+                <a href="contactpage.html" >Contact</a>\
               </li>\
             </ul>\
           </div>\
